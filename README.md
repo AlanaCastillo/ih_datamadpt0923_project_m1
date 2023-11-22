@@ -1,6 +1,6 @@
 <<div align="center">
 
-# ******BICIMAD- BICIPARK STATIONS****** </div>
+# ******BICI-GOUZZY****** </div>
 ![5795B78E-0A0E-4C17-8770-5671B6D36A87](https://github.com/AlanaCastillo/project_m1/assets/141866356/a6ba1274-8e55-4c54-9e50-17769b4a5bd9)
 
 ## 🚲**Description**
