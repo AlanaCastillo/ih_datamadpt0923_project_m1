@@ -1,123 +1,49 @@
-<p align="left"><img src="https://cdn-images-1.medium.com/max/184/1*2GDcaeYIx_bQAZLxWM4PsQ@2x.png"></p>
+<<div align="center">
 
-# __ih_datamadpt0923_project_m1__
+# ******BICIMAD- BICIPARK STATIONS****** </div>
+![5795B78E-0A0E-4C17-8770-5671B6D36A87](https://github.com/AlanaCastillo/project_m1/assets/141866356/a6ba1274-8e55-4c54-9e50-17769b4a5bd9)
 
-Ironhack Madrid - Data Analytics Part Time - Sep 2023 - Project Module 1
+## 🚲**Description**
+Ironhack Madrid - Data Analytics Part Time - Sep 2023 - Project Module 1. The aim of this project is to provide users with a list of the nearest BiciMAD or BiciPARK stations of different Catholic churches in Madrid.
 
-## **Data:**
 
-There are 2 main datasources:
+## 🚲**Tecnologies**
 
-- **CSV Files.** The datasets contains information from the BiciMAD stations including their location (i.e.: latitude / longitude). You may find the `.csv` files in the __data__ folder.
+To deploy this project run
 
-- **API REST.** We will use the API REST from the [Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/nuevoMadrid/swagger-ui-master-2.2.10/dist/index.html?url=/egobfiles/api.datos.madrid.es.json#/), where you can find the __Catálogo de datos__ with more than 70 datasets. The API endpoint is `https://datos.madrid.es/egob`. 
-
-> __IMPORTANT:__ These are the body corresponding to every dataset:
-
-- Alana: `/catalogo/209426-0-templos-catolicas.json`
-
-- Alberto: `/catalogo/209434-0-templos-otros.json`
-
-- Ana: `/catalogo/202162-0-instalaciones-accesibles-municip.json`
-
-- Andrew: `/catalogo/202180-0-instalaciones-accesibles-no-muni.json`
-
-- Carlos: `/catalogo/202311-0-colegios-publicos.json`
-
-- Elena: `/catalogo/203166-0-universidades-educacion.json`
-
-- Guille: `/catalogo/200215-0-instalaciones-deportivas.json`
-
-- John: `/catalogo/200304-0-centros-culturales.json`
-
-- Natalia: `/catalogo/201000-0-embajadas-consulados.json`
-
-- Rodrigo: `/catalogo/300356-0-monumentos-ciudad-madrid.json`
-
-- Sil: `/catalogo/208844-0-monumentos-edificios.json`
-
-- Silvia: `/catalogo/300614-0-centros-educativos.json`
-
-- Tere: `/catalogo/200761-0-parques-jardines.json`
-
-- Tomás: `/catalogo/212808-0-espacio-deporte.json`
+<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />Visual Studio Code
 
 
 
----
+<img align="left" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="padding-right:10px;" />Python
 
-## **Main Challenge:**
+ 
+ ## 🚲**Required libraries**
+The user needs to install next  libraries 
 
-You must create a Python App (**Data Pipeline**) that allow their potential users to find the nearest BiciMAD station to a set of places of interest using the methods included in the module `geo_calculations.py`. The output table should look similar to:
+`pandas :  conda install -c anaconda pandas`
+
+`arparse :  conda install -c conda-forge argparse`
+
+`fuzzy wuzzy : conda install -c conda-forge fuzzywuzzy`
+
+ ## 🚲**Data**
+
+[](https://linktodocumentation)
+
+**CSV Files.**:open_file_folder: The datasets contains information from the BiciMAD stations including their location. You may find the `.csv` files in the __data__ folder
+
+
+ ## 🚲**Output**
+
+ AQUI ME FALTA PONER ALGO
 
 | Place of interest | Type of place (*) | Place address | BiciMAD station | Station location |
 |---------|----------|-------|------------|----------|
-| Auditorio Carmen Laforet (Ciudad Lineal)   | Centros Culturales | Calle Jazmin, 46 | Legazpi | Calle Bolívar, 3 |
-| Centro Comunitario Casino de la Reina | Centros municipales de enseñanzas artísticas | Calle Casino, 3 | Chamartin | Calle Rodríguez Jaén, 40 |
-| ...     | ...            | ...        | ...      | ...        |
-> __(*)__ This correspond to the type of place assigned to you. 
+| Basílica Jesús de Medinaceli   | Templos Catolicos | PLAZA JESUS 2  | 27 - Huertas | Calle Jesús nº 1
 
 
-**Your project must meet the following requirements:**
+## 🚲**Author**
 
-- It must be contained in a GitHub repository which includes a README file that explains the aim and content of your code. You may follow the structure suggested [here](https://github.com/potacho/data-project-template).
-
-- __It must create, at least, a `.csv` file including the requested table (i.e. Main Challenge).__ Alternatively, you may create an image, pdf, plot or any other output format that you may find convenient. You may also send your output by e-mail, upload it to a cloud repository, etc. 
-
-- It must provide, at least, two options for the final user to select when executing using `argparse`: **(1)** To get the table for every 'Place of interest' included in the dataset (or a set of them), **(2)** To get the table for a specific 'Place of interest' imputed by the user.
-
-
-**Additionally:**
-
-- You must prepare a 4 minutes presentation (ppt, canva, etc.) to explain your project (Instructors will provide further details about the content of the presentation).
-
-- The last slide of your presentation must include your candidate for the **'Ironhack Data Code Beauty Pageant'**. 
-
-
----
-
-### **Bonus 1:**
-
-You may include in your table the availability of bikes in each station.
-
----
-
-### **Bonus 2:**
-
-You may improve the usability of your app by using [FuzzyWuzzy](https://pypi.org/project/fuzzywuzzy/).
-
----
-
-### **Bonus 3:**
-
-Feel free to enrich your output data with any data you may find relevant (e.g.: wiki info for every place of interest) or connect to the [BiciMAD API](https://mobilitylabs.emtmadrid.es/) and update bikes availability realtime or find a better way to calculate distances...there's no limit!!!
-
---- 
-
-
-## **Project Main Stack**
-
-- [Requests](https://requests.readthedocs.io/)
-
-- [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
-
-- Module `geo_calculations.py`
-
-- [Argparse](https://docs.python.org/3.9/library/argparse.html)
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
- 
-
+- Alana Castillo Trujillo
+- :octocat: https://github.com/AlanaCastillo/project_m1
