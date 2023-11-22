@@ -17,15 +17,8 @@ Built using languages and libraries listed below
 
 <img align="left" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="padding-right:10px;" />Python
 
-## 🚲**Getting started**
-1. Fork the repo   - :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
 
-
-
-
-
- 
- ## 🚲**Required libraries**
+## 🚲**Required libraries**
 The user needs to install next  libraries 
 
 `pandas :  conda install -c anaconda pandas`
@@ -33,6 +26,11 @@ The user needs to install next  libraries
 `arparse :  conda install -c conda-forge argparse`
 
 `fuzzy wuzzy : conda install -c conda-forge fuzzywuzzy`
+
+## 🚲**Getting started**
+1. Fork the repo   - :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
+2. Clone 
+ 
 
  ## 🚲**Data**
 
