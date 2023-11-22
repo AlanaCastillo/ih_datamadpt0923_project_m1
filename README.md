@@ -46,4 +46,4 @@ The user needs to install next  libraries
 ## 🚲**Author**
 
 - Alana Castillo Trujillo
-- :octocat: https://github.com/AlanaCastillo/project_m1
+- :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
