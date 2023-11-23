@@ -31,8 +31,11 @@ The user needs to install next  libraries
 `fuzzy wuzzy : conda install -c conda-forge fuzzywuzzy`
 
 ## 🚲**Getting started**
-1. Fork the repo   - :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
-2. Clone 
+1. Fork repo   - :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
+2. Clone repo
+3. Commit your changes
+4. Push your changes
+5. OPen a pull request 
  
 
  ## 🚲**Data**
