@@ -5,7 +5,7 @@
 
 ## 🚲**Description**
 Ironhack Madrid - Data Analytics Part Time - Sep 2023 - Project Module 1. The aim of this project is to provide users with a list of the nearest BiciMAD or BiciPARK stations of different Catholic churches in Madrid.
-
+designed as the Module 1 Project for the Ironhack Data Analytics Bootcamp
 
 ## 🚲**Tecnologies**
 
