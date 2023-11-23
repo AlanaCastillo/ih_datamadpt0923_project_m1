@@ -44,7 +44,7 @@ The user needs to install next  libraries
 
  ## 🚲**Output**
 
- AQUI ME FALTA PONER ALGO
+ Give the user a table with the following information
 
 | Place of interest | Type of place (*) | Place address | BiciMAD station | Station location |
 |---------|----------|-------|------------|----------|
