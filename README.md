@@ -18,9 +18,6 @@ Built using languages and libraries listed below
 <img align="left" alt="Python" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="padding-right:10px;" />Python7
 
 
-PONER JUPYTER EN LA PRESENTACION
-
-
 ## 🚲**Required libraries**
 The user needs to install next  libraries 
 
@@ -57,4 +54,4 @@ The user needs to install next  libraries
 ## 🚲**Author**
 
 - Alana Castillo Trujillo
-- :octocat: https://github.com/AlanaCastillo/ih_datamadpt0923_project_m1/
+- :octocat: https://github.com/AlanaCastillo)https://github.com/AlanaCastillo
