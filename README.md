@@ -32,7 +32,7 @@ The user needs to install next  libraries
 2. Clone repo
 3. Commit your changes
 4. Push your changes
-5. OPen a pull request 
+5. Open a pull request 
  
 
  ## 🚲**Data**
