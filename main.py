@@ -1,50 +1,39 @@
-##############################################################################
-#                                                                            #                       
-#   argparse — Parser for command-line options, arguments and sub-commands   #     
-#                                                                            #
-#   Ironhack Data Part Time --> Sep-2023                                    #
-#                                                                            #
-##############################################################################
+from acquisition import bicimad_dataframe
+from acqisition import bicipark_dataframe
+from wrangling import parsing
+from fuzzywuzzy import process
+
+def main():
+    args = parsing() 
+    print("args---", args, sep="\n")
 
 
-# import library
+    if args.bicimad:
+        df_bicimad = bicimad_dataframe()
+        print("df_bicimad----->", df_bicimad,sep="\n")
 
-import argparse
+        if args.todas:
+            return df_bicimad
+        else:
+            match = process.extractOne(args.lugar, df_bicimad['templo'])
+            print("match------", match[0], sep="\n")
+            place_especific = df_bicimad.loc[df_bicimad['templo'] == match[0]]
+            print("BICIMAD RESULT----")
+            print(place_especific.to_csv('./data/bicimad_result.csv', index=False, encoding= 'utf-8'))
 
+    elif args.bicipark:
+        df_bicipark = bicipark_dataframe()
+        print("df_bicipark-------", df_bicipark, sep="\n")
 
-# Script functions 
+        if args.todas:
+            return df_bicipark
+        else:
+            match = process.extractOne(args.lugar, df_bicipark['templo'])
+            print("match------", match, sep="\n")
+            place_especific = df_bicipark.loc[df_bicipark['templo'] == match[0]]
+            print("BICIPARK RESULT----")
+            place_especific.to_csv('./data/bicipark_result.csv', index=False, encoding= 'utf-8')
 
-def enter_number(message):
-    return float(input(message))
-
-def sum_function(x1, x2):
-    return x1 + x2
-    
-def multiply_function(x1, x2):
-    return x1 * x2
-    
-
-# Argument parser function
-
-def argument_parser():
-    parser = argparse.ArgumentParser(description= 'Application for arithmetic calculations' )
-    help_message ='You have two options. Option 1: "mult" performs multiplication of two given numbers. Option 2: "sum" performs the sum of two given numbers' 
-    parser.add_argument('-f', '--function', help=help_message, type=str)
-    args = parser.parse_args()
-    return args
-
-
-# Pipeline execution
 
 if __name__ == '__main__':
-    if argument_parser().function == 'mult':
-        n1 = enter_number('Enter a number: ')
-        n2 = enter_number('Enter another number: ')
-        result = multiply_function(n1, n2)
-    elif argument_parser().function == 'sum':
-        n1 = enter_number('Enter a number: ')
-        n2 = enter_number('Enter another number: ')
-        result = sum_function(n1, n2)
-    else:
-        result = 'FATAL ERROR...you need to select the correct method'
-    print(f'The result is => {result}')
+    main()
